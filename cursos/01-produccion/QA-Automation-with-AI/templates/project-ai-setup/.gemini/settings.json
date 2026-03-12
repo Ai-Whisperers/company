@@ -1,9 +1,0 @@
-{
-  "model": {
-    "name": "gemini-2-5-pro"
-  },
-  "context": {
-    "fileName": ["GEMINI.md"]
-  },
-  "telemetry": true
-}
