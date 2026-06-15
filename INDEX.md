@@ -18,6 +18,8 @@
 | See the 8 highest-value gaps in our offering | [`Company/opportunities/README.md`](Company/opportunities/README.md) |
 | See our 3 ICPs | [`Company/icps/README.md`](Company/icps/README.md) |
 | See flagship case studies | [`docs/case-studies/`](docs/case-studies/) |
+| See the full production state (VPS, Docker Swarm, GitHub, Hermes) | [`docs/infrastructure-audit.md`](docs/infrastructure-audit.md) |
+| See everything tied together (the deepest synthesis) | [`docs/the-complete-company.md`](docs/the-complete-company.md) |
 | Cite a research source | [`docs/research-sources.md`](docs/research-sources.md) |
 | See a staff CV | [`Company/Staff/`](Company/Staff/) |
 | Run CI/CD locally | [`docs/CI_CD_LOCAL.md`](docs/CI_CD_LOCAL.md) |
@@ -62,6 +64,8 @@ company/
 ├── docs/                                  # External-facing docs
 │   ├── company-narrative.md               # The one-liner + capability pitch
 │   ├── portfolio-narrative.md             # Website copy
+│   ├── the-complete-company.md            # Deepest synthesis (4-layer stack + everything tied together)
+│   ├── infrastructure-audit.md            # VPS + Swarm + GitHub + Hermes deep audit
 │   ├── research-sources.md                # Every URL we cited
 │   ├── case-studies/                      # 5 flagship project case studies
 │   │   ├── 01-taller-ocampos.md
