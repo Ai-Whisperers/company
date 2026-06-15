@@ -248,6 +248,7 @@ None of the 20 competitors we benchmarked have these:
 | **`docs/company-narrative.md`** | The one-liner + 3 pitch versions + 6 capability tracks |
 | **`docs/portfolio-narrative.md`** | Website copy (hero, capabilities, CTAs, footer) |
 | **`docs/infrastructure-audit.md`** | The VPS + Swarm + GitHub + Hermes deep audit |
+| **`docs/audits/07-ai-whisperers-org.md`** | 2026-06-15 live audit of `ai-whisperers.org` (DNS, content integrity, Vercel legacy, 12 findings + shippable fixes) |
 | **`docs/research-sources.md`** | Every URL cited |
 | **`docs/case-studies/`** | 4 flagship project case studies |
 | **`Company/services/README.md`** | 28-item service menu |
