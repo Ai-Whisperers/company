@@ -12,6 +12,7 @@
 | Understand who we are (one-liner, capability map) | [`docs/company-narrative.md`](docs/company-narrative.md) |
 | See the website copy | [`docs/portfolio-narrative.md`](docs/portfolio-narrative.md) |
 | Find all 28 services we offer | [`Company/services/README.md`](Company/services/README.md) |
+| Get the sales sheet (CSV + Apps Script + JSON) | [`Company/sales/`](Company/sales/) |
 | See the 20-competitor analysis | [`Company/competitors/README.md`](Company/competitors/README.md) |
 | See what we offer that 20 competitors don't | [`Company/competitors/our-whitespace.md`](Company/competitors/our-whitespace.md) |
 | See pricing benchmarks vs competitors | [`Company/competitors/pricing-benchmarks.md`](Company/competitors/pricing-benchmarks.md) |
@@ -48,6 +49,12 @@ company/
 │   │
 │   ├── services/                          # What we sell (28-item menu)
 │   │   └── README.md
+│   ├── sales/                             # Sales artifacts (CSV, Apps Script, JSON)
+│   │   ├── README.md
+│   │   ├── create-sheet.gs                # Apps Script to create the Google Sheet
+│   │   ├── capabilities-sheet.csv
+│   │   ├── capabilities-sheet.json
+│   │   └── SHEET-README.html
 │   │
 │   ├── competitors/                       # 20-competitor market analysis
 │   │   ├── README.md                      # Master table
@@ -55,10 +62,10 @@ company/
 │   │   ├── our-whitespace.md              # What we offer that 20 don't
 │   │   └── profiles/                      # (TBD) 20 detailed profiles
 │   │
-│   ├── opportunities/                     # 8 gaps + 8 LATAM opportunities
+│   ├── opportunities/                     # 8 gaps + roadmap
 │   │   └── README.md
 │   │
-│   └── icps/                              # 3 ICPs + 3 Paraguay-specific
+│   └── icps/                              # 3 ICPs
 │       └── README.md
 │
 ├── docs/                                  # External-facing docs
