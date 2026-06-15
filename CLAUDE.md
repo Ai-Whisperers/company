@@ -1,708 +1,267 @@
-# CLAUDE.md - FPUNA AI Education Repository
+# CLAUDE.md - AI Whisperers Company Repository
+
+> Context for AI coding agents (Claude, GPT, etc.) working on this `company` repo.
+> Read this before making any changes.
+
+---
 
 ## Repository Context
 
-**Purpose**: Multi-disciplinary AI education platform for FPUNA (Facultad Politécnica - Universidad Nacional de Asunción) students across 5 tracks: Software Development, Electronics & Automation, Aeronautical Engineering, Marketing & Business Tourism, and Academic Research.
+**Purpose:** The **single source of truth for AI Whisperers as a company**. Staff, services, pricing, competitive landscape, opportunities, portfolio, and research — all in one place.
 
-**Status**: Production-ready educational platform with ~95% completion, modular course architecture, shared resources system.
+**Status:** Active. Last major update 2026-06-15.
 
-**Cultural Context**: Paraguayan Spanish, MERCOSUR considerations, adapted to local economic reality.
+**Owner:** Ivan Weiss van der Pol (Founder & CEO)
+
+**Audience:**
+- Humans: Ivan, Kyrian, prospective clients, prospective hires
+- AI agents: Any AI agent working on AI Whisperers code, marketing, or business
 
 ---
 
-## Architecture Overview
+## What This Repo Is
 
-### Repository Structure
+This is the **company documentation repo**. It contains:
+
+1. **Staff files** — CVs, resumes, profiles, competency matrices
+2. **Services** — the 28 things we offer, with pricing
+3. **Competitors** — 20-competitor market analysis
+4. **Opportunities** — gaps in our current offering + roadmap
+5. **ICPs** — who we serve
+6. **Case studies** — flagship projects documented
+7. **Research sources** — every URL we cited
+8. **Narrative docs** — the one-liner, the pitch, the website copy
+
+It does **NOT** contain:
+- ❌ Product code (lives in `agentic-schemas`, `paragu-ai-builder`, `telescope-ai`, etc.)
+- ❌ Marketing automation (lives in `marketing-strategy`)
+- ❌ Infrastructure config (lives in `infrastructure`)
+
+---
+
+## Repository Structure
 
 ```
-FPUNA-AI-Education/
-├── cursos/                          # Course content (5 specialized tracks)
-│   ├── 01-produccion/              # QA Automation with AI (complete course)
-│   ├── 02-desarrollo/              # FPUNA Verano 2026 (6 tracks)
-│   │   └── FPUNA-2026/
-│   │       ├── 00-FUNDAMENTOS/     # Universal fundamentals
-│   │       ├── 01-DESARROLLO-SOFTWARE/
-│   │       ├── 02-ELECTRONICA-AUTOMATIZACION/
-│   │       ├── 03-INGENIERIA-AERONAUTICA/
-│   │       ├── 04-MARKETING-NEGOCIOS-TURISMO/
-│   │       ├── 05-INVESTIGACION-ACADEMICA/
-│   │       └── docentes/           # Instructor resources
-│   ├── 03-beta/                    # Beta courses
-│   └── talleres/                   # Workshops
+company/
+├── README.md                              # Top-level overview
+├── CLAUDE.md                              # This file
+├── INDEX.md                               # Master index
 │
-├── .claude/                         # Claude Code configuration (COMPLEX ECOSYSTEM)
-│   ├── agents/                     # Specialized AI agents
-│   ├── commands/                   # Slash commands
-│   ├── hooks/                      # Automation hooks
-│   ├── mcp/                        # 19 MCP server configs
-│   ├── rules/                      # 6 YAML rule files (3,400+ lines)
-│   ├── skills/                     # 100+ skills + 10 new FPUNA skills
-│   ├── CLAUDE.md                   # Personal Claude config
-│   └── settings.local.json         # Permissions & environment
+├── Company/                               # The company
+│   ├── Staff/                             # People
+│   ├── services/                          # 28-item service menu
+│   ├── competitors/                       # 20-competitor analysis
+│   ├── opportunities/                     # 8 gaps + roadmap
+│   └── icps/                              # 3 ICPs
 │
-├── _compartido/                     # SHARED resources (since 2026)
-│   ├── 00-KITS-DE-INICIO-IA/       # One-step setup kits
-│   ├── 02-estandares-y-calidad/    # Linting and testing standards
-│   ├── 03-plantillas-de-contexto/  # Project templates
-│   └── 04-utilidades-ia/           # MCPs, Skills, configuration guides
+├── docs/                                  # External-facing
+│   ├── company-narrative.md               # The pitch
+│   ├── portfolio-narrative.md             # Website copy
+│   ├── research-sources.md                # Citations
+│   ├── case-studies/                      # 5 flagship projects
+│   └── CI_CD_LOCAL.md
 │
-├── scripts/                         # Utility scripts
-│   └── hooks/                      # CI/CD custom hooks (Python)
-│
-├── docs/                            # Documentation
-├── shared/                          # Additional shared resources
-├── .pre-commit-config.yaml         # 24 pre-commit hooks
-└── README.md                        # Root documentation
-```
-
-### Design Patterns
-
-1. **Modular Course Architecture**: Each track is self-contained but shares common resources from `_compartido/`
-2. **Starter Kit Pattern**: Every track has a `starter-kit/` with templates and examples
-3. **Shared Resources System**: Centralized common resources to avoid duplication
-4. **Multi-Provider Support**: Configurations for Claude, Cursor, Copilot, Gemini, Windsurf
-5. **Layered Documentation**: README → CLAUDE.md → specific module docs
-
----
-
-## Technology Stack
-
-### Core Technologies
-
-| Category | Technology | Purpose |
-|----------|-----------|---------|
-| **Language** | Python 3.11 | Primary scripting/testing language |
-| **Testing** | pytest | Unit and integration testing |
-| **Linting** | flake8, black, isort | Python code quality |
-| **Type Checking** | mypy | Static type analysis |
-| **Complexity** | radon | Cyclomatic complexity analysis |
-| **Security** | bandit | Security vulnerability scanning |
-| **CI/CD** | pre-commit, GitHub Actions | Local and remote quality gates |
-
-### AI/ML Stack
-
-| Tool | Purpose |
-|------|---------|
-| **LangChain** | LLM orchestration and chains |
-| **LangGraph** | State-based AI workflows |
-| **FastAPI** | API development |
-| **Qdrant** | Vector database for RAG |
-| **PostgreSQL** | Relational database |
-| **Redis** | Caching and rate limiting |
-
-### Infrastructure
-
-| Platform | Use Case |
-|----------|----------|
-| **AWS** | Primary cloud provider |
-| **Databricks** | Data engineering pipelines |
-| **Terraform** | Infrastructure as Code |
-| **Kubernetes** | Container orchestration |
-| **Docker** | Local development |
-
----
-
-## Naming Conventions
-
-### Files and Directories
-
-| Type | Convention | Example |
-|------|-----------|---------|
-| **Python files** | snake_case | `check_protected_files.py` |
-| **Directories** | UPPER-KEBAB-CASE | `01-DESARROLLO-SOFTWARE/` |
-| **Documentation** | UPPERCASE.md | `README.md`, `CLAUDE.md` |
-| **Config files** | dotfiles | `.pre-commit-config.yaml` |
-| **Scripts** | snake_case | `install-cicd.sh` |
-| **Templates** | descriptive names | `project-ai-setup/` |
-
-### Python Code
-
-| Element | Convention | Example |
-|---------|-----------|---------|
-| **Functions** | snake_case | `check_file_complexity()` |
-| **Classes** | PascalCase | `PerformanceAntiPattern` |
-| **Constants** | UPPER_SNAKE_CASE | `THRESHOLDS`, `ANTI_PATTERNS` |
-| **Variables** | snake_case | `all_issues`, `exit_code` |
-| **Private** | _leading_underscore | `_internal_helper()` |
-| **Modules** | snake_case | `complexity_guardian.py` |
-
-### TypeScript/JavaScript (when applicable)
-
-| Element | Convention | Example |
-|---------|-----------|---------|
-| **Files** | kebab-case | `user-service.ts` |
-| **Classes** | PascalCase | `UserService` |
-| **Functions** | camelCase | `getUserById` |
-| **Constants** | UPPER_SNAKE_CASE | `MAX_RETRIES` |
-| **Interfaces** | PascalCase with I prefix | `IUserData` |
-
----
-
-## Code Style Rules
-
-### Python
-
-1. **Formatting**: Use `black` with line length 120
-2. **Imports**: Use `isort` for sorting (stdlib → third-party → local)
-3. **Type Hints**: Required for all function signatures
-4. **Docstrings**: Google-style docstrings
-5. **Comments**: Spanish language for FPUNA context
-
-```python
-# ✅ CORRECT
-from typing import List, Tuple
-from pathlib import Path
-import sys
-
-
-def check_file_complexity(filepath: str) -> dict:
-    """
-    Analyze complexity metrics for a file.
-
-    Args:
-        filepath: Path to the Python file to analyze.
-
-    Returns:
-        Dictionary containing complexity metrics.
-    """
-    pass
-
-
-# ❌ INCORRECT - Missing type hints, wrong import order
-import sys
-from typing import List
-from pathlib import Path
-
-def check_file(filepath):
-    """Check file."""
-    pass
-```
-
-### Import Organization
-
-```python
-# 1. Standard library
-import sys
-import os
-from pathlib import Path
-from typing import List, Tuple, Dict
-
-# 2. Third-party
-from radon.complexity import cc_visit, cc_rank
-from radon.metrics import mi_visit, mi_rank
-
-# 3. Local imports
-from my_module import helper
+├── scripts/
+└── backlog/
 ```
 
 ---
 
-## Anti-Patterns (CRITICAL - NEVER DO)
+## The Company (for AI agent context)
 
-### Python Anti-Patterns
+**AI Whisperers** is a **2-person engineering studio in Paraguay** that ships production AI across 6 capability tracks:
 
-```python
-# ❌ FORBIDDEN - Empty catch block (throws error into the void)
-try:
-    risky_operation()
-except:
-    pass
+1. **🌐 Web & SaaS** — Multi-tenant platforms, vertical SaaS, e-commerce
+2. **🤖 AI Agents** — Custom multi-agent systems, RAG, MCP servers
+3. **📱 WhatsApp + Engagement** — Lead capture, customer service AI agents
+4. **🛰️ 3D & Satellite** — Photorealistic renders from real-world data
+5. **⚙️ Automation & Data** — n8n workflows, Python scripts, ETL
+6. **🎓 Training & Strategy** — Corporate AI workshops, certifications
 
-# ❌ FORBIDDEN - Comment-only catch
-try:
-    send_notification()
-except Exception as e:
-    # Don't fail if notification fails
-    pass
+**42 public repos on GitHub. 28 live client sites in production. 1 open-source 20-pattern agentic framework. Zero slide decks.**
 
-# ❌ FORBIDDEN - Bare except (catches KeyboardInterrupt!)
-try:
-    operation()
-except:
-    handle_error()
+**Team (current):**
+- **Ivan Weiss van der Pol** — Founder & CEO
+- **Kyrian Weiss van der Pol** — Co-Founder & Technical Director
 
-# ❌ FORBIDDEN - String concatenation in loop (O(n²))
-result = ""
-for item in items:
-    result += item  # Inefficient!
+> ⚠️ **Note:** Jonathan Verdun is **no longer with the company** as of 2026. The folder `Company/Staff/03-Jonathan-Verdun/` is kept for historical reference.
 
-# ❌ FORBIDDEN - Wildcard imports
-from module import *  # Never use
-
-# ❌ FORBIDDEN - Mutable default arguments
-def bad_function(items=[]):  # ❌ List is shared!
-    items.append(1)
-    return items
-
-# ❌ FORBIDDEN - Hardcoded credentials
-API_KEY = "sk-1234567890abcdef"  # NEVER!
-
-# ❌ FORBIDDEN - range(len()) pattern
-for i in range(len(items)):  # Inefficient
-    print(items[i])
-
-# ❌ FORBIDDEN - Using .keys() for membership
-if key in my_dict.keys():  # Unnecessary method call
-    pass
-
-# ✅ CORRECT PATTERNS
-
-# Error handling - Log and rethrow or return structured result
-try:
-    await critical_operation()
-except Exception as e:
-    console.error('[Context] Operation failed:', e)
-    raise  # Or return structured error
-
-# String building - Use join()
-result = "".join(items)
-
-# Explicit imports
-from module import specific_function
-
-# Immutable defaults
-def good_function(items=None):
-    if items is None:
-        items = []
-    items.append(1)
-    return items
-
-# Direct iteration
-for item in items:
-    print(item)
-
-# Direct dict membership
-if key in my_dict:
-    pass
-```
-
-### Repository Anti-Patterns
-
-1. **Language Mixing**: Inconsistent Spanish/English in documentation
-2. **Missing README**: Every module must have README.md
-3. **No Test Coverage**: Less than 75% coverage not allowed
-4. **God Modules**: Files over 500 lines must be split
-5. **Circular Imports**: Poor module organization
-6. **Mixed Naming**: Inconsistent conventions within a file
-7. **Sensitive Data in Repo**: Credentials, API keys, .env files
-8. **Generated Files Committed**: __pycache__, *.pyc, .log files
-9. **No Type Hints**: Python 3.11 requires type annotations
-10. **Dead Code**: Unused imports, commented code blocks
+**Based:** San Lorenzo, Central, Paraguay
+**Contact:** +595 991 501444 · ai.whisperer.wvdp@gmail.com
 
 ---
 
-## Execution Flows
+## Key Facts for AI Agents
 
-### Build Flow
+### What we sell
+- Web dev at $50/hr
+- Custom microservices at $80/hr
+- Consulting at $100/session
+- Hosting at $20/month
+- AI agent setup: custom ($3-15K + $300-1,000/mo typical)
+- 3D renders: $500-10K per render
+- Multi-tenant SaaS: $10-50K + $50-500/mo per tenant
+- Training: $500-2,500/student
 
-```bash
-# 1. Validate repository structure
-python scripts/hooks/check_repo_structure.py
+### What we don't sell
+- Strategy decks (we ship code)
+- Generic chatbot templates
+- 6-month enterprise rollouts
 
-# 2. Check protected files
-python scripts/hooks/check_protected_files.py <staged-files>
+### Our positioning
+- **Practitioners Who Build in Public** (per `marketing-strategy/03-POSITIONING.md`)
+- "Don't believe us? Check our GitHub."
 
-# 3. Check complexity
-python scripts/hooks/complexity_guardian.py <python-files>
+### Our whitespace (what we do that 20 competitors don't)
+1. Satellite → 3D photorealistic render pipeline
+2. Open-source 20-pattern agentic framework (MIT)
+3. MCP server for hardware control
+4. Multi-tenant SaaS site generator
+5. Multi-supermarket data product
+6. 4-language production website
+7. Self-hosted Rust + React video LMS
+8. 42 public repos as proof of work
 
-# 4. Check performance patterns
-python scripts/hooks/performance_guardian.py <python-files>
-
-# 5. Check imports
-python scripts/hooks/import_guardian.py <python-files>
-
-# 6. Pre-commit hooks (24 total)
-pre-commit run --all-files
-```
-
-### Test Flow
-
-```bash
-# Unit tests
-python -m pytest tests/unit/ -v
-
-# Coverage check
-python -m pytest --cov=. --cov-report=html --cov-fail-under=75
-
-# Integration tests
-python -m pytest tests/integration/ -v
-
-# Security scan
-python -m bandit -r . -f json -o bandit-report.json
-
-# Complexity check
-python -m radon cc . -a -nc
-```
-
-### Deploy Flow (Conceptual)
-
-```bash
-# 1. Full validation
-./scripts/validate-all.sh
-
-# 2. Build documentation
-./scripts/build-docs.sh
-
-# 3. Package for distribution
-./scripts/package.sh
-
-# 4. Deploy to learning platform
-./scripts/deploy-courses.sh
-```
+See `Company/competitors/our-whitespace.md` for the full breakdown.
 
 ---
 
-## Critical Constraints
+## Coding Conventions for This Repo
 
-### Quality Gates (NON-NEGOTIABLE)
+### File naming
+- Markdown files: `PascalCase.md` for top-level, `kebab-case.md` for sub-files
+- One concept per file
+- No `Untitled.md` or `New Document.md` files
 
-1. **Test Coverage**: Minimum 75% line coverage
-2. **Cyclomatic Complexity**: Max 20 per function (rank C), error if >30 (rank D)
-3. **File Size**: Maximum 500 source lines per file
-4. **Maintainability Index**: Minimum 70 (rank C)
-5. **Security**: No bandit high-severity issues
-6. **Linting**: Zero flake8 errors (with configured ignores)
-7. **Type Safety**: 100% type hint coverage
+### Markdown style
+- Use ATX-style headers (`#`, `##`, `###`)
+- Tables for structured comparisons
+- Code blocks with language tags (` ```bash `, ` ```python `, etc.)
+- Internal links as relative paths: `[link](Company/services/README.md)`
+- External links as full URLs
+- Bold for emphasis, not for emphasis-substitute
 
-### Protected Files (NEVER MODIFY DIRECTLY)
+### When adding new files
+- Update `INDEX.md` with a link
+- Update the relevant section's README
+- Add a "Last updated" date
+- Cite sources in `docs/research-sources.md` if applicable
 
-```yaml
-blocked:
-  - .env
-  - .env.*
-  - *.pem
-  - *.key
-  - id_rsa*
-  - credentials.json
-  - secrets.json
-  - .claude/settings.local.json
-  - package-lock.json
-  - yarn.lock
-  - poetry.lock
-  - Pipfile.lock
-  - LICENSE
-  - CODE_OF_CONDUCT.md
-  - SECURITY.md
+### When updating pricing
+- Update `Company/services/README.md`
+- Update `Company/competitors/pricing-benchmarks.md`
+- Update `README.md` if headline numbers change
+- Source the rate from `marketing-strategy/02-PRICING.md` (canonical)
 
-restricted:
-  - README.md
-  - pyproject.toml
-  - requirements.txt
-  - setup.py
-  - .gitignore
-  - .github/workflows/*.yml
-```
+### When adding a new competitor
+- Add a row to `Company/competitors/README.md` master table
+- Create a profile in `Company/competitors/profiles/`
+- Cite the source URL in `docs/research-sources.md`
+- Update threat assessment
 
----
+### When adding a new case study
+- Add to `docs/case-studies/` with next number (01-, 02-, etc.)
+- Include: client/scope, problem, solution, results, tech stack, links
+- Update `INDEX.md`
+- Cross-link from `Company/services/README.md` if it ties to a service
 
-## MCP Servers Ecosystem
-
-19 MCP servers configured for enhanced AI capabilities:
-
-| Server | Purpose |
-|--------|---------|
-| **duckduckgo-search** | Anonymous web search |
-| **brave-search** | Privacy-focused search |
-| **context7-docs** | Library documentation |
-| **postgresql-server** | Database operations |
-| **qdrant-server** | Vector database |
-| **redis-server** | Caching operations |
-| **sqlite-server** | Local database |
-| **github-advanced** | GitHub CLI integration |
-| **git-server** | Git operations |
-| **sequential-thinking** | Step-by-step reasoning |
-| **jupyter-server** | Jupyter notebook integration |
-| **fetch-server** | Web content fetching |
-| **notion-server** | Notion integration |
-| **slack-server** | Slack integration |
-| **time-server** | Time utilities |
-| **memory-server** | Persistent memory |
-| **puppeteer-server** | Browser automation |
+### When updating the team
+- Update `Company/Staff/XX-Name/` with new CV/resume/profile
+- Update `Company/Staff/analysis/Team-Structure.md`
+- Update `Company/icps/README.md` if contact info changes
+- Update `README.md` if team size changes
 
 ---
 
-## Skills Ecosystem
+## What to Update When (update cadence)
 
-10 new FPUNA-specific skills created:
-
-1. **student-onboarding-fpuna** - Student setup guide
-2. **student-project-evaluation** - Rubric-based evaluation
-3. **course-material-generator** - Content generation
-4. **academic-standards-validator** - FPUNA standards validation
-5. **project-boilerplate-generator** - Project scaffolding
-6. **student-progress-analyzer** - Progress tracking
-7. **educational-code-review** - Constructive feedback
-8. **testing-patterns-student** - Testing education
-9. **technical-documentation-academic** - Documentation standards
-10. **dependency-security-management** - Security auditing
+| Trigger | What to update |
+|---|---|
+| New service added | `Company/services/README.md`, `README.md`, `INDEX.md` |
+| New competitor analyzed | `Company/competitors/README.md`, `Company/competitors/profiles/` |
+| Pricing change | `Company/services/README.md`, `Company/competitors/pricing-benchmarks.md`, `README.md` |
+| New flagship project | `docs/case-studies/0N-*.md`, `Company/competitors/our-whitespace.md` (if unique capability) |
+| New research cited | `docs/research-sources.md` |
+| Team change | `Company/Staff/XX-Name/`, `Company/Staff/analysis/Team-Structure.md` |
+| Strategy shift | `Company/opportunities/README.md`, `docs/company-narrative.md` |
+| Website copy change | `docs/portfolio-narrative.md` |
 
 ---
 
-## CI/CD Hooks (Custom Python)
+## Do NOT Do
 
-### check_protected_files.py
-- Prevents accidental modification of sensitive files
-- Blocks credentials, secrets, generated lock files
-- Warns about restricted files
-
-### performance_guardian.py
-- Detects performance anti-patterns using AST analysis
-- Checks for: string concat in loops, inefficient dict lookups, repeated regex compilation
-- Validates against Google/Netflix performance guides
-
-### complexity_guardian.py
-- Monitors cyclomatic complexity with radon
-- Thresholds: A(5), B(10), C(20), D(30), E(40), F(50+)
-- Tracks maintainability index
-- Enforces max 500 lines per file
-
-### import_guardian.py
-- Detects wildcard imports (forbidden)
-- Finds unused imports
-- Validates import order (stdlib → third-party → local)
-
-### check_repo_structure.py
-- Validates repository organization
-- Checks for required files/directories
-- Validates .gitignore entries
-- Checks Claude configuration
+- ❌ Hardcode personal info that's already in the Staff folders
+- ❌ Create duplicate copies of the same doc (update in place)
+- ❌ Add new files without updating `INDEX.md`
+- ❌ Mix Spanish and English in the same file (English is the canonical language)
+- ❌ Make pricing claims without a source
+- ❌ Add competitor analysis without citing the source URL
+- ❌ Edit historical case study results (those are point-in-time)
+- ❌ Remove the Jonathan Verdun folder (kept for history)
+- ❌ Use `find/grep` for navigation — use `INDEX.md` and the file tree
+- ❌ Add new top-level directories without updating `INDEX.md`
 
 ---
 
-## Pre-commit Configuration (24 Hooks)
+## Common Tasks
 
-```yaml
-Security:
-  - detect-private-key
-  - detect-aws-credentials
+### "Add a new service"
+1. Open `Company/services/README.md`
+2. Add to the appropriate tier
+3. Update pricing if applicable
+4. Update `INDEX.md` only if a new file is created
+5. If the service is genuinely unique (no competitor has it), update `Company/competitors/our-whitespace.md`
 
-Quality:
-  - trailing-whitespace
-  - end-of-file-fixer
-  - check-yaml
-  - check-json
-  - check-toml
-  - check-added-large-files (max 5MB)
-  - mixed-line-ending
-  - check-case-conflict
+### "Add a new competitor"
+1. Open `Company/competitors/README.md`
+2. Add a row to the master table
+3. Create `Company/competitors/profiles/NN-name.md` with the standard profile format
+4. Update `Company/competitors/pricing-benchmarks.md` if pricing is known
+5. Add the source URL to `docs/research-sources.md`
 
-Python:
-  - black (formatting)
-  - isort (import sorting)
-  - flake8 (linting)
-  - mypy (type checking)
-  - bandit (security)
+### "Update the one-liner"
+1. Edit `docs/company-narrative.md` (single source of truth)
+2. Mirror in `README.md`
+3. Mirror in `docs/portfolio-narrative.md` if website hero changes
 
-Custom:
-  - protected-files (custom hook)
-  - complexity-guardian (custom hook)
-  - performance-guardian (custom hook)
-  - import-guardian (custom hook)
-  - repo-structure (custom hook)
-```
+### "Add a case study"
+1. Use template in `docs/case-studies/0N-template.md` (create if doesn't exist)
+2. Include: client, problem, solution, results, tech stack, links
+3. Update `INDEX.md`
 
----
-
-## Educational Context
-
-### FPUNA Specifics
-
-- **Institution**: Facultad Politécnica - Universidad Nacional de Asunción
-- **Location**: Paraguay
-- **Language**: Spanish (Paraguayan context)
-- **Academic Standards**: 75% minimum test coverage, conventional commits
-- **Cultural Adaptation**: MERCOSUR considerations, local economic context
-- **Duration**: 2-week intensive programs
-
-### Track Structure
-
-```
-Semana 1: 00-FUNDAMENTOS (Universal)
-  - Instalación OpenCode
-  - MCP configuration
-  - Context engineering
-  - Safety & verification
-
-Semana 2: Specialization Tracks
-  01-DESARROLLO-SOFTWARE: Microservices, TDD, System Design
-  02-ELECTRONICA-AUTOMATIZACION: IoT, Embedded, PCB Design
-  03-INGENIERIA-AERONAUTICA: CAD/CAE, Aerodynamics, Optimization
-  04-MARKETING-NEGOCIOS-TURISMO: Digital marketing, Analytics
-  05-INVESTIGACION-ACADEMICA: Research methods, Paper writing
-```
+### "Generate an ICP-targeted pitch"
+1. Read `Company/icps/README.md` for the ICP details
+2. Read `docs/company-narrative.md` for the pitch structure
+3. Read `Company/competitors/our-whitespace.md` for unique capabilities
+4. Compose in the ICP's language (Spanish for Paraguay PYMEs, English for global SMBs, etc.)
 
 ---
 
-## Key Dependencies
+## Related Repositories
 
-```yaml
-Core:
-  python: 3.11+
-  
-Quality:
-  black: 23.x
-  isort: 5.x
-  flake8: 6.x
-  mypy: 1.x
-  
-Analysis:
-  radon: 6.x
-  bandit: 1.x
-  
-AI/ML:
-  langchain: 0.1.x
-  langgraph: 0.0.x
-  fastapi: 0.100.x
-  
-Infrastructure:
-  docker: Latest
-  terraform: 1.6.x
-  
-Testing:
-  pytest: 7.x
-  pytest-cov: 4.x
-```
+This repo is the canonical source for **company-level** information. For other concerns, see:
+
+- **Code:** https://github.com/Ai-Whisperers (42 public repos)
+- **Marketing strategy:** https://github.com/Ai-Whisperers/marketing-strategy
+- **Infrastructure:** https://github.com/Ai-Whisperers/infrastructure
+- **Agentic patterns:** https://github.com/Ai-Whisperers/agentic-schemas
 
 ---
 
-## Configuration Files
+## Anti-Patterns to Avoid
 
-### .pre-commit-config.yaml
-Central configuration for all 24 pre-commit hooks including custom Python scripts.
+When an AI agent is asked to "improve" or "rewrite" this repo:
 
-### .claude/settings.local.json
-Claude Code permissions and environment variables.
-
-### pyproject.toml (if exists)
-Python project configuration for black, isort, pytest.
-
-### .gitignore
-Must include:
-```
-__pycache__/
-*.pyc
-.env
-venv/
-*.log
-.DS_Store
-```
+- ❌ Don't consolidate docs into a single mega-file (we want grep-able, focused files)
+- ❌ Don't add emojis that aren't already in the source (we have a consistent set)
+- ❌ Don't change pricing without source backing
+- ❌ Don't add competitor analysis without URL citation
+- ❌ Don't use "we" to mean "AI Whisperers" if the user asked for an external perspective
+- ❌ Don't delete the deprecated `03-Jonathan-Verdun/` folder
+- ❌ Don't auto-generate case study numbers (results are real data, not fabricated)
 
 ---
 
-## Decision Log
+## Version
 
-### Why This Architecture?
-
-1. **Modular Design**: Allows independent development of tracks while sharing common resources
-2. **Multi-Provider Support**: Students can use their preferred AI tool (Claude, Cursor, Copilot, etc.)
-3. **Shared Resources**: Centralized `_compartido/` reduces duplication and maintenance
-4. **Strict Quality Gates**: Pre-commit hooks ensure educational content meets professional standards
-5. **Cultural Context**: Paraguayan Spanish, local economic considerations built into content
-
-### Why Python for Hooks?
-
-- Native integration with quality tools (radon, bandit, black)
-- Strong AST manipulation capabilities for custom checks
-- Excellent type hint support for maintainability
-- Industry standard for DevOps tooling
-
-### Why 75% Coverage Minimum?
-
-- Balances thoroughness with practical educational timelines
-- Industry standard for production code
-- Ensures critical paths are tested without being overly burdensome
-
----
-
-## Common Operations
-
-### Adding a New Course Track
-
-```bash
-# 1. Create directory structure
-mkdir -p cursos/02-desarrollo/FPUNA-2026/06-NEW-TRACK/{starter-kit,modules,resources}
-
-# 2. Copy template CLAUDE.md
-cp cursos/02-desarrollo/FPUNA-2026/01-DESARROLLO-SOFTWARE/starter-kit/CLAUDE.md \
-   cursos/02-desarrollo/FPUNA-2026/06-NEW-TRACK/starter-kit/
-
-# 3. Customize for track specifics
-# 4. Create README.md with track description
-# 5. Run validation
-python scripts/hooks/check_repo_structure.py
-```
-
-### Adding a New MCP Server
-
-```bash
-# 1. Create config in .claude/mcp/
-# 2. Follow existing JSON structure
-# 3. Add to documentation
-# 4. Test connectivity
-```
-
-### Adding a New Skill
-
-```bash
-# 1. Create in .claude/skills/fpuna-education/
-# 2. Follow template structure
-# 3. Update skills README
-# 4. Test with Claude
-```
-
----
-
-## Troubleshooting
-
-### Pre-commit Hooks Failing
-
-```bash
-# Run specific hook with verbose output
-pre-commit run complexity-guardian --verbose
-
-# Skip hooks (emergency only - requires team approval)
-git commit --no-verify
-
-# Fix auto-fixable issues
-pre-commit run --all-files
-```
-
-### Import Issues
-
-```bash
-# Check import order
-python -m isort --check-only .
-
-# Fix import order
-python -m isort .
-```
-
-### Type Checking Issues
-
-```bash
-# Run mypy with detailed output
-python -m mypy --show-error-codes .
-
-# Check specific file
-python -m mypy scripts/hooks/complexity_guardian.py
-```
-
----
-
-## Contact & Support
-
-- **Technical Support**: soporte-ia@fpuna.edu.py
-- **Slack**: fpuna-verano-2026.slack.com
-- **Instructor Resources**: `cursos/02-desarrollo/FPUNA-2026/docentes/`
-
----
-
-## Last Updated
-
-*Generated: January 30, 2026*
-*Version: 1.0.0*
-*Maintainer: FPUNA AI Education Team*
-
----
-
-*This CLAUDE.md is a living document. Update it as the repository evolves.*
+This `CLAUDE.md` was last updated 2026-06-15 by Erebus (AI Workforce Lead) for Ivan Weiss van der Pol. When the company materially changes, update this file first.

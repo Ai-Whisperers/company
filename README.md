@@ -1,295 +1,127 @@
 # AI Whisperers
 
-**Enterprise AI Automation & Consulting**
+> **AI Whisperers is a 2-person engineering studio in Paraguay that designs, builds, and ships production AI systems — websites, multi-tenant SaaS, AI agents, MCP servers, automation, and satellite-to-3D visualizations — for clients who want working code, not slide decks.**
 
-[![Website](https://img.shields.io/badge/Website-ai--whisperers.com-blue)](https://ai-whisperers.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://linkedin.com/company/ai-whisperers)
-[![Location](https://img.shields.io/badge/Location-Paraguay-green)](https://en.wikipedia.org/wiki/Paraguay)
-[![Founded](https://img.shields.io/badge/Founded-Nov%202025-orange)]()
+42 public repos. 28 live client sites. 1 open-source agentic framework. Zero slide decks.
 
----
-
-## 🎯 About Us
-
-AI Whisperers is an AI-powered automation consultancy helping enterprises harness the power of artificial intelligence and workflow automation. Founded in November 2025, we specialize in:
-
-- **AI Integration** - LangChain, OpenAI, LLM orchestration
-- **Workflow Automation** - n8n, Power Automate, custom solutions
-- **Data Engineering** - Python, Databricks, ETL pipelines
-- **Enterprise Consulting** - Strategy, implementation, training
+📍 San Lorenzo, Central, Paraguay · +595 991 501444 · [ai-whisperers.org](https://ai-whisperers.org)
 
 ---
 
-## 👥 Our Team
+## 🎯 What We Do
 
-### Leadership
+Six capability tracks, all backed by public proof on GitHub:
 
-<table>
-  <tr>
-    <td align="center">
-      <a href="#ivan-weiss-van-der-pol">
-        <img src="https://img.shields.io/badge/Ivan-CEO-blue" alt="Ivan Weiss van der Pol" />
-      </a>
-      <br />
-      <strong>Ivan Weiss van der Pol</strong>
-      <br />
-      Founder & CEO
-      <br />
-      <sub>Data Engineer | Automation Architect | QA Specialist</sub>
-    </td>
-    <td align="center">
-      <a href="#kyrian-weiss-van-der-pol">
-        <img src="https://img.shields.io/badge/Kyrian-Technical-purple" alt="Kyrian Weiss van der Pol" />
-      </a>
-      <br />
-      <strong>Kyrian Weiss van der Pol</strong>
-      <br />
-      Technical Management
-      <br />
-      <sub>n8n Expert | AI Integration | Automation</sub>
-    </td>
-    <td align="center">
-      <a href="#jonathan-verdun">
-        <img src="https://img.shields.io/badge/Jonathan-Operations-green" alt="Jonathan Verdun" />
-      </a>
-      <br />
-      <strong>Jonathan Verdun</strong>
-      <br />
-      Operations Manager
-      <br />
-      <sub>Process Optimization | Client Relations</sub>
-    </td>
-  </tr>
-</table>
+| Track | What it is | Proof |
+|---|---|---|
+| 🌐 **Web & SaaS** | Multi-tenant platforms, vertical SaaS, e-commerce | [paragu-ai-builder](https://github.com/Ai-Whisperers/paragu-ai-builder), [Vete](https://github.com/Ai-Whisperers/Vete), [Taller_Ocampos](https://github.com/Ai-Whisperers/Taller_Ocampos) |
+| 🤖 **AI Agents** | Custom multi-agent systems, RAG, MCP servers | [agentic-schemas](https://github.com/Ai-Whisperers/agentic-schemas) (20 patterns, MIT), [telescope-ai](https://github.com/Ai-Whisperers/telescope-ai) |
+| 📱 **WhatsApp + Engagement** | Lead capture, customer service, booking AI agents | 28 client sites integrate WhatsApp CTAs |
+| 🛰️ **3D & Satellite** | Photorealistic renders from real-world satellite + elevation data | Skills: `site-data-acquisition`, `satellite-to-blender-pipeline`, `blender-mcp` |
+| ⚙️ **Automation & Data** | n8n workflows, Python scripts, document processing | [paraguay-supermercados](https://github.com/Ai-Whisperers/paraguay-supermercados) (50K+ products) |
+| 🎓 **Training & Strategy** | Corporate AI workshops, certifications, free audits | [Courses-Content](https://github.com/Ai-Whisperers/Courses-Content), [courses-website](https://github.com/Ai-Whisperers/courses-website) |
 
 ---
 
-## 📁 Repository Navigation
+## 👥 The Team
 
-### 🏢 Company
+- **Ivan Weiss van der Pol** — Founder & CEO · weissvanderpol.ivan@gmail.com · +595 981 324 569
+- **Kyrian Weiss van der Pol** — Co-Founder & Technical Director · kyrianweiss.vdp@gmail.com
 
-| Resource | Description | Link |
-|----------|-------------|------|
-| **Team Directory** | Complete staff profiles, CVs, and documentation | [`/Company/Staff/`](./Company/Staff/) |
-| **Team Structure** | Org chart, roles & responsibilities | [`/Company/Staff/analysis/Team-Structure.md`](./Company/Staff/analysis/Team-Structure.md) |
-| **Competency Matrix** | Skills inventory & gap analysis | [`/Company/Staff/analysis/Competency-Matrix.md`](./Company/Staff/analysis/Competency-Matrix.md) |
-
-### 👨‍💻 Team Member Profiles
-
-#### Ivan Weiss van der Pol (Founder & CEO)
-
-| Document | Description | Link |
-|----------|-------------|------|
-| **Full CV** | Complete curriculum vitae | [`CV.md`](./Company/Staff/01-Ivan-Weiss-van-der-Pol/Ivan_Weiss_Van_Der_Pol_CV.md) |
-| **1-Page Resume** | Executive summary | [`Resume-1Page.md`](./Company/Staff/01-Ivan-Weiss-van-der-Pol/Ivan_Weiss_Van_Der_Pol_Resume_1Page.md) |
-| **Profile** | Company profile & role details | [`Profile.md`](./Company/Staff/01-Ivan-Weiss-van-der-Pol/Profile.md) |
-| **Analysis** | Skills & competency analysis | [`Analysis.md`](./Company/Staff/01-Ivan-Weiss-van-der-Pol/Ivan_Weiss_Van_Der_Pol_Analysis.md) |
-
-**Quick Info:**
-- 📧 weissvanderpol.ivan@gmail.com
-- 📞 +595 981 324 569
-- 🔗 [LinkedIn](https://linkedin.com/in/ivanweissvanderpol)
-- 💻 [GitHub](https://github.com/IvanWeissVanDerPol)
-- 🌐 [Portfolio](https://ivanweissvanderpol.github.io)
+> 📌 See [`Company/Staff/`](Company/Staff/) for full CVs, resumes, and profiles.
 
 ---
 
-#### Kyrian Weiss van der Pol (Technical Management)
+## 📚 What's In This Repo
 
-| Document | Description | Link |
-|----------|-------------|------|
-| **Full CV** | Complete curriculum vitae | [`CV.md`](./Company/Staff/02-Kyrian-Weiss-van-der-Pol/CV.md) |
-| **1-Page Resume** | Professional summary | [`Resume-1Page.md`](./Company/Staff/02-Kyrian-Weiss-van-der-Pol/Resume-1Page.md) |
-| **Profile** | Company profile & role details | [`Profile.md`](./Company/Staff/02-Kyrian-Weiss-van-der-Pol/Profile.md) |
+This is the **single source of truth for AI Whisperers as a company**. The full index is in [`INDEX.md`](INDEX.md). Key docs:
 
-**Quick Info:**
-- 📧 kyrianweiss.vdp@gmail.com
-- 🎓 18 years old, University student (2026)
-- 🏆 "Wizard material" technical talent
-- ⚡ n8n automation expert
-
----
-
-#### Jonathan Verdun (Operations Manager)
-
-| Document | Description | Link |
-|----------|-------------|------|
-| **Full CV** | Complete curriculum vitae | [`CV.md`](./Company/Staff/03-Jonathan-Verdun/CV.md) |
-| **1-Page Resume** | Professional summary | [`Resume-1Page.md`](./Company/Staff/03-Jonathan-Verdun/Resume-1Page.md) |
-| **Profile** | Company profile & role details | [`Profile.md`](./Company/Staff/03-Jonathan-Verdun/Profile.md) |
-
-**Quick Info:**
-- 🎯 Operations & process optimization specialist
-- 🤝 Ivan's right-hand for client relations
-- 🌍 International client coordination
+- [**Company Narrative**](docs/company-narrative.md) — the one-liner, full pitch, capability map, positioning
+- [**28-Item Service Menu**](Company/services/README.md) — every service we offer, with pricing
+- [**20-Competitor Analysis**](Company/competitors/README.md) — the market landscape, with threat assessment
+- [**Our Whitespace**](Company/competitors/our-whitespace.md) — what we offer that 20 competitors don't
+- [**8 Highest-Value Gaps**](Company/opportunities/README.md) — what we should build next
+- [**3 ICPs**](Company/icps/README.md) — who we serve, what they buy
+- [**5 Case Studies**](docs/case-studies/) — flagship projects documented
+- [**Research Sources**](docs/research-sources.md) — every URL we cited
 
 ---
 
-## 🛠️ What We Do
+## 🔍 8 Things We Do That No Competitor Does
 
-### Services
+1. **🛰️ Satellite → 3D photorealistic render pipeline** (no one in LATAM has this)
+2. **🤖 Open-source 20-pattern agentic AI framework** (MIT, D3 graph viz)
+3. **🔌 MCP server for real hardware control** (telescope-AI proves the pattern)
+4. **🌐 Multi-tenant SaaS for site generation** (paragu-ai-builder, 5+ live tenants)
+5. **📺 Multi-supermarket data product** (50K+ products across 5 chains)
+6. **🌍 4-language production website** (es/en/nl/pt, all in production)
+7. **🎓 Self-hosted Rust + React video LMS** (built from scratch, not a SaaS reskin)
+8. **📂 42 public repos as proof of work** (no other agency publishes)
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│                    AI WHISPERERS SERVICES                   │
-├─────────────────┬─────────────────┬─────────────────────────┤
-│   AI CONSULTING │   AUTOMATION    │   DATA ENGINEERING      │
-├─────────────────┼─────────────────┼─────────────────────────┤
-│ • LLM Strategy  │ • n8n Workflows │ • ETL Pipelines         │
-│ • AI Integration│ • Process Auto  │ • Data Warehousing      │
-│ • Prompt Eng    │ • Power Platform│ • Analytics             │
-│ • RAG Systems   │ • Custom Tools  │ • Visualization         │
-└─────────────────┴─────────────────┴─────────────────────────┘
-```
-
-### Technology Stack
-
-**AI/ML:**
-![LangChain](https://img.shields.io/badge/LangChain-Expert-green)
-![OpenAI](https://img.shields.io/badge/OpenAI-Expert-green)
-![n8n](https://img.shields.io/badge/n8n-Expert-green)
-
-**Data:**
-![Python](https://img.shields.io/badge/Python-Expert-blue)
-![Databricks](https://img.shields.io/badge/Databricks-Expert-blue)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Expert-blue)
-
-**Cloud:**
-![Azure](https://img.shields.io/badge/Azure-Expert-orange)
-![AWS](https://img.shields.io/badge/AWS-Advanced-orange)
-![Docker](https://img.shields.io/badge/Docker-Advanced-orange)
+See [`Company/competitors/our-whitespace.md`](Company/competitors/our-whitespace.md) for the full breakdown.
 
 ---
 
-## 📊 Team Skills Overview
+## 🏆 Trust Counters
 
-### Competency Ratings
-
-| Skill | Ivan | Kyrian | Jonathan |
-|-------|:----:|:------:|:--------:|
-| **AI/LLM Integration** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐ |
-| **n8n Automation** | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ |
-| **Python Development** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐ |
-| **Power Platform** | ⭐⭐⭐⭐⭐ | ⭐⭐ | ⭐⭐ |
-| **Data Engineering** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐ |
-| **Client Relations** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
-| **Process Optimization** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
-
-*See full [Competency Matrix](./Company/Staff/analysis/Competency-Matrix.md) for complete analysis*
+- **42** public repos on GitHub
+- **28** live client sites in production (Docker Swarm)
+- **50,000+** Paraguay supermarket products indexed
+- **20** published agentic design patterns (MIT-licensed)
+- **4** languages (es / en / nl / pt)
+- **30+** domains under management
 
 ---
 
-## 🌍 Languages
+## 💰 Pricing (transparent, per [`marketing-strategy/02-PRICING.md`](https://github.com/Ai-Whisperers/marketing-strategy))
 
-We speak your language:
+| Service | Rate |
+|---|---|
+| Web design/development | $50/hr |
+| Custom microservices | $80/hr |
+| Consulting | $100/session |
+| AI automation setup | Fixed price per automation |
+| Training | Per student or per cohort |
+| Hosting | $20/month (includes API tokens + maintenance) |
 
-- 🇪🇸 **Spanish** - Native (Paraguay)
-- 🇬🇧 **English** - Fluent/Professional
-- 🇳🇱 **Dutch** - Fluent (Heritage)
-
----
-
-## 📞 Contact Us
-
-**Organization:** AI Whisperers  
-**Location:** Paraguay (Remote operations worldwide)  
-**Phone:** +595 0985724135  
-**Email:** kyrianweiss.vdp@gmail.com
-
-### Individual Contacts
-
-| Person | Role | Email |
-|--------|------|-------|
-| Ivan Weiss van der Pol | CEO | weissvanderpol.ivan@gmail.com |
-| Kyrian Weiss van der Pol | Technical | kyrianweiss.vdp@gmail.com |
-| Jonathan Verdun | Operations | *Available upon request* |
+See [`Company/competitors/pricing-benchmarks.md`](Company/competitors/pricing-benchmarks.md) for the full comparison with 20 competitors.
 
 ---
 
-## 🚀 Current Projects
+## 📍 Contact
 
-| Project | Client | Status | Lead |
-|---------|--------|--------|------|
-| **Energy21/Eneve Engagement** | Energy21/Eneve (Netherlands) | 🟢 Active | Ivan + Team |
-| **Solstein Platform** | Internal Product | 🟡 Development | Ivan |
-| **Star Engine** | Internal Product | 🟡 Development | Kyrian |
-
----
-
-## 📈 Career Timeline
-
-### Ivan Weiss van der Pol
-```
-2018-2022  WPG.srl           QA Engineer & Developer
-2019-2022  3D-Tech-Py        Founder
-2023       Wichita State     Study Abroad (BECAL Scholar)
-2023-2024  MentorMate        Quality Specialist II (FDA Healthcare)
-2024-2025  Stoic Finch       Technical Lead (Power Platform)
-2025-Now   AI Whisperers     Founder & CEO
-```
-
-### Kyrian Weiss van der Pol
-```
-2025-Now   AI Whisperers     Technical Management
-2026-Now   University        Computer Science (In Progress)
-```
-
-### Jonathan Verdun
-```
-2025-Now   AI Whisperers     Operations Manager
-```
+- **WhatsApp:** +595 991 501444 (primary)
+- **Email:** ai.whisperer.wvdp@gmail.com
+- **Address:** Destacamento Cazal, San Lorenzo City, Central, Paraguay
+- **Org on GitHub:** https://github.com/Ai-Whisperers
+- **Web:** https://ai-whisperers.org
+- **LinkedIn:** https://linkedin.com/company/ai-whisperers
+- **YouTube:** https://youtube.com/@ai-whisperers
+- **X/Twitter:** https://twitter.com/ai_whisperers
 
 ---
 
-## 📝 Templates & Resources
+## 🤝 How to Engage
 
-For new team members or documentation:
-
-| Template | Purpose | Link |
-|----------|---------|------|
-| **CV Template** | Create new CVs | [`CV-Template.md`](./Company/Staff/templates/CV-Template.md) |
-| **Resume Template** | One-page resumes | [`Resume-Template.md`](./Company/Staff/templates/Resume-Template.md) |
-| **Profile Template** | Employee profiles | [`Profile-Template.md`](./Company/Staff/templates/Profile-Template.md) |
-
----
-
-## 📚 Additional Resources
-
-- [Skills Inventory](./Company/Staff/analysis/Skills-Inventory.md) - Complete team skills catalog
-- [Team Structure](./Company/Staff/analysis/Team-Structure.md) - Organizational details
-- [Staff README](./Company/Staff/README.md) - Internal staff documentation
-
----
-
-## 🏆 Recognition
-
-- **NASA Galactic Problem Solver** (2023) - Ivan Weiss van der Pol
-- **FDA-Compliant Medical Device Delivery** - Flyte Project (MentorMate)
-- **BECAL Scholarship** - Prestigious Paraguayan government scholarship
-
----
-
-## 🔒 Confidentiality Notice
-
-Some documents in this repository contain confidential business information, client data, and strategic planning materials. Access is restricted to authorized team members and clients.
+1. **Free 30-min strategy call** — no sales pitch, no credit card
+2. **Free AI audit** — for businesses with $50K+ revenue
+3. **30-Day AI Kickstart** — $5-15K fixed price (audit + PoC + training)
+4. **Custom engagement** — we scope and quote
 
 ---
 
 ## 📄 License
 
-© 2025-2026 AI Whisperers. All rights reserved.
+This repository is private and proprietary to AI Whisperers. See [LICENSE](LICENSE).
 
 ---
 
-<p align="center">
-  <strong>AI Whisperers</strong><br>
-  <em>Automate the boring, simplify the complex, and make tech feel human.</em><br><br>
-  <a href="https://linkedin.com/in/ivanweissvanderpol">LinkedIn</a> •
-  <a href="https://github.com/IvanWeissVanDerPol">GitHub</a> •
-  <a href="https://ivanweissvanderpol.github.io">Portfolio</a>
-</p>
+## 🔗 Related Repos
 
----
+- [marketing-strategy](https://github.com/Ai-Whisperers/marketing-strategy) — Marketing playbook (ICPs, positioning, pricing, content calendar)
+- [infrastructure](https://github.com/Ai-Whisperers/infrastructure) — Hermes Agent, Docker Swarm, VPS, MCPs
+- [agentic-schemas](https://github.com/Ai-Whisperers/agentic-schemas) — 20-pattern open-source agentic framework
+- [paragu-ai-builder](https://github.com/Ai-Whisperers/paragu-ai-builder) — Multi-tenant SaaS site generator
+- [telescope-ai](https://github.com/Ai-Whisperers/telescope-ai) — MCP server for hardware control
 
-**Last Updated:** March 2026  
-**Maintainer:** AI Whisperers Documentation Team
+See all 42 repos at https://github.com/Ai-Whisperers.
