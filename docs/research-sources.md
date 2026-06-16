@@ -238,7 +238,6 @@
 ### Internal profiles
 - `Company/Staff/01-Ivan-Weiss-van-der-Pol/` (CV, resume, analysis, profile)
 - `Company/Staff/02-Kyrian-Weiss-van-der-Pol/` (CV, resume, profile)
-- `Company/Staff/03-Jonathan-Verdun/` (archived — former co-founder)
 - `Company/Staff/analysis/Competency-Matrix.md`
 - `Company/Staff/analysis/Skills-Inventory.md`
 - `Company/Staff/analysis/Team-Structure.md`

@@ -84,7 +84,7 @@ company/
 - **Ivan Weiss van der Pol** — Founder & CEO
 - **Kyrian Weiss van der Pol** — Co-Founder & Technical Director
 
-> ⚠️ **Note:** Jonathan Verdun is **no longer with the company** as of 2026. The folder `Company/Staff/03-Jonathan-Verdun/` is kept for historical reference.
+> **Team of 2 founders.** Operations is shared between Ivan and Kyrian until a dedicated ops hire. See `Company/Staff/analysis/Team-Structure.md` for the scaling plan.
 
 **Based:** San Lorenzo, Central, Paraguay
 **Contact:** +595 991 501444 · ai.whisperer.wvdp@gmail.com
@@ -197,7 +197,6 @@ See `Company/competitors/our-whitespace.md` for the full breakdown.
 - ❌ Make pricing claims without a source
 - ❌ Add competitor analysis without citing the source URL
 - ❌ Edit historical case study results (those are point-in-time)
-- ❌ Remove the Jonathan Verdun folder (kept for history)
 - ❌ Use `find/grep` for navigation — use `INDEX.md` and the file tree
 - ❌ Add new top-level directories without updating `INDEX.md`
 
@@ -257,7 +256,6 @@ When an AI agent is asked to "improve" or "rewrite" this repo:
 - ❌ Don't change pricing without source backing
 - ❌ Don't add competitor analysis without URL citation
 - ❌ Don't use "we" to mean "AI Whisperers" if the user asked for an external perspective
-- ❌ Don't delete the deprecated `03-Jonathan-Verdun/` folder
 - ❌ Don't auto-generate case study numbers (results are real data, not fabricated)
 
 ---

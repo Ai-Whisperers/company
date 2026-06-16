@@ -42,7 +42,8 @@ Founder and CEO of AI Whisperers. Responsible for strategic vision, technical ar
    - Investor relations
 
 4. **Team Leadership**
-   - Mentoring Kyrian and managing Jonathan
+   - Mentoring Kyrian
+   - Operations oversight (interim, until dedicated hire)
    - Hiring and team growth
    - Culture and values
 

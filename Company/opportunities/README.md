@@ -162,7 +162,7 @@ Per OECD 2025 + REDIEX + Paraguay economic research, the **Paraguay-specific gap
 - [ ] Create "30-Day AI Kickstart" landing page
 - [ ] Publish the WhatsApp AI Agent product page
 - [ ] Add the agentic-schemas viz to the homepage
-- [ ] Update the team page (remove Jonathan, add "2-person founder team")
+- [x] Update the team page (remove Jonathan, add "2-person founder team") — 2026-06-15
 - [ ] Fix `www.ai-whisperers.org` 404 (DNS in Cloudflare)
 
 ## 🔨 Medium Builds (30-90 days)

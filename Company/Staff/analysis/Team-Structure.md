@@ -12,16 +12,19 @@
                     ┌──────────────┼──────────────┐
                     │              │              │
          ┌──────────▼────┐  ┌──────▼──────┐  ┌────▼──────────┐
-         │    KYRIAN     │  │  JONATHAN   │  │   FUTURE     │
-         │ WEISS VAN DER │  │   VERDUN    │  │    HIRES     │
-         │     POL       │  │             │  │              │
-         │  Technical    │  │  Operations │  │  - Frontend  │
-         │  Management   │  │   Manager   │  │  - DevOps    │
-         │               │  │             │  │  - Sales     │
-         │ • n8n Expert  │  │ • Process   │  │  - Design    │
-         │ • AI/ML Dev   │  │   Optimization│ │              │
-         │ • Automation  │  │ • Client    │  │              │
-         │   Architecture│  │   Relations │  │              │
+         │    KYRIAN     │  │  FUTURE     │  │   FUTURE     │
+         │ WEISS VAN DER │  │  OPERATIONS │  │    HIRES     │
+         │     POL       │  │  (TBD)      │  │              │
+         │  Technical    │  │             │  │  - Frontend  │
+         │  Management   │  │  Operations │  │  - DevOps    │
+         │               │  │  (backfill)│  │  - Sales     │
+         │ • n8n Expert  │  │             │  │  - Design    │
+         │ • AI/ML Dev   │  │ • Process   │  │              │
+         │ • Automation  │  │   Mgmt      │  │              │
+         │   Architecture│  │ • Client    │  │              │
+         │               │  │   Relations │  │              │
+         │ • Operations  │  │             │  │              │
+         │   (interim)   │  │             │  │              │
          └───────────────┘  └─────────────┘  └──────────────┘
 ```
 
@@ -29,13 +32,12 @@
 
 ## Team Overview
 
-### Core Team (3 members)
+### Core Team (2 members)
 
 | Role | Name | Focus Area | Reports To |
 |------|------|------------|------------|
-| **Founder & CEO** | Ivan Weiss van der Pol | Strategy, Technical Architecture, Client Relations | Board |
-| **Technical Management** | Kyrian Weiss van der Pol | Automation, n8n, AI Integration, Documentation | Ivan |
-| **Operations Manager** | Jonathan Verdun | Business Operations, Client Coordination, Process Optimization | Ivan |
+| **Founder & CEO** | Ivan Weiss van der Pol | Strategy, Technical Architecture, Client Relations, Operations | Board |
+| **Technical Management** | Kyrian Weiss van der Pol | Automation, n8n, AI Integration, Documentation, Operations support | Ivan |
 
 ### Extended Team
 
@@ -50,15 +52,12 @@
 
 ### Direct Reports to CEO (Ivan)
 - Kyrian Weiss van der Pol (Technical Management)
-- Jonathan Verdun (Operations Manager)
 
 ### Collaboration Matrix
 
 | Pair | Collaboration Type | Frequency | Focus |
 |------|-------------------|-----------|-------|
-| Ivan ↔ Kyrian | Technical direction, mentoring | Daily | Architecture, proposals |
-| Ivan ↔ Jonathan | Strategic operations | Daily | Client delivery, processes |
-| Kyrian ↔ Jonathan | Project execution | Weekly | Implementation coordination |
+| Ivan ↔ Kyrian | Technical direction, mentoring, operations | Daily | Architecture, proposals, client delivery |
 
 ---
 
@@ -80,7 +79,7 @@
 - Technical proposal writing
 - Code review and technical guidance
 - Strategic partnership development
-- Mentoring Kyrian and managing Jonathan
+- Mentoring Kyrian and managing operations
 
 **Decision Authority:**
 - Technical architecture decisions
@@ -99,6 +98,7 @@
 - Technical documentation and proposals
 - Automation architecture design
 - Quality assurance of technical deliverables
+- Operations support: client communications, project coordination, process documentation
 
 **Key Activities:**
 - Building n8n workflows for clients
@@ -107,47 +107,20 @@
 - Researching new AI/automation tools
 - Implementing API integrations
 - Testing and debugging automation flows
+- Coordinating client projects (interim operations)
+- Maintaining internal documentation and process playbooks
 
 **Decision Authority:**
 - n8n workflow design patterns
 - Technical implementation approaches
 - Tool selection within automation stack
 - Documentation standards
+- Internal workflow design
 
 **Growth Path:**
 - Current: Technical Management
 - Next 2 years: Technical Lead / Solution Architect
 - Long-term: CTO or Technical Co-founder
-
----
-
-### Jonathan Verdun - Operations Manager
-
-**Primary Responsibilities:**
-- Day-to-day business operations
-- Client project coordination
-- Process optimization and workflow design
-- Resource planning and allocation
-- Documentation and standardization
-
-**Key Activities:**
-- Coordinating client projects
-- Managing operational workflows
-- Handling client communications
-- Supporting proposal development
-- Optimizing internal processes
-- Planning team logistics and travel
-
-**Decision Authority:**
-- Operational process design
-- Resource allocation within projects
-- Client communication protocols
-- Internal workflow standards
-
-**Growth Path:**
-- Current: Operations Manager
-- Next 2 years: Director of Operations
-- Long-term: COO or Managing Director
 
 ---
 
@@ -159,7 +132,7 @@
 |---------|--------------|-----------|---------|
 | **Daily Standup** | All | Daily (async) | Status updates, blockers |
 | **Technical Review** | Ivan, Kyrian | Weekly | Architecture, code review |
-| **Operations Sync** | Ivan, Jonathan | Weekly | Client status, processes |
+| **Operations Sync** | Ivan, Kyrian | Weekly | Client status, processes |
 | **Team Alignment** | All | Weekly | Full team coordination |
 | **Strategic Planning** | All | Monthly | Goals, roadmap, growth |
 | **1:1s** | Various | Weekly | Individual development |
@@ -209,37 +182,37 @@ Individual → Direct Pair → Full Team → External (Advisor/Board)
 
 | Team Member | Technical | Client Work | Operations | Admin | Learning |
 |-------------|-----------|-------------|------------|-------|----------|
-| **Ivan** | 40% | 30% | 10% | 10% | 10% |
-| **Kyrian** | 60% | 15% | 5% | 10% | 10% |
-| **Jonathan** | 10% | 30% | 40% | 15% | 5% |
+| **Ivan** | 35% | 30% | 15% | 10% | 10% |
+| **Kyrian** | 50% | 20% | 15% | 5% | 10% |
 
 ### Project Assignment
 
 | Project | Lead | Support | Status |
 |---------|------|---------|--------|
-| **Energy21/Eneve** | Ivan | Kyrian, Jonathan | Active |
+| **Energy21/Eneve** | Ivan | Kyrian | Active |
 | **Solstein Platform** | Ivan | Kyrian | Development |
 | **Star Engine** | Kyrian | Ivan | Development |
-| **Internal Operations** | Jonathan | Ivan | Ongoing |
+| **Internal Operations** | Ivan | Kyrian | Ongoing |
 
 ---
 
 ## Scaling Plan
 
-### Phase 1: Foundation (Current - 3 members)
+### Phase 1: Foundation (Current - 2 members)
 - Core team established
-- Processes being defined
+- Operations: shared between Ivan and Kyrian until dedicated hire
 - First major client engaged
 
-### Phase 2: Growth (6-9 months - 5-7 members)
+### Phase 2: Growth (6-9 months - 4-6 members)
 **New Hires:**
+- Operations Manager (backfill for the gap)
 - Frontend Developer (React/TypeScript)
 - Junior Automation Developer
 
 **Team Structure:**
-- Ivan: CEO + CTO
+- Ivan: CEO + CTO (interim)
 - Kyrian: Technical Lead
-- Jonathan: Director of Operations
+- Operations Manager (TBD)
 - + Frontend Dev
 - + Automation Dev
 
@@ -253,7 +226,7 @@ Individual → Direct Pair → Full Team → External (Advisor/Board)
 **Team Structure:**
 - Executive: Ivan (CEO)
 - Technical: Kyrian (CTO) + 4-5 developers
-- Operations: Jonathan (COO) + 2-3 ops staff
+- Operations: Operations Manager + 2-3 ops staff
 - Business: BD Manager + marketing
 
 ### Phase 4: Maturity (24+ months - 20+ members)
@@ -276,13 +249,15 @@ Individual → Direct Pair → Full Team → External (Advisor/Board)
 - Technical delivery quality (0 critical bugs)
 - Documentation completeness (100%)
 - Proposal win rate (40%+)
+- Operations support coverage (interim, until Phase 2 hire)
 - Technical skill growth (quarterly assessments)
 
-### Jonathan (Operations Manager)
+### Process and Documentation Owner
 - Process efficiency (20% improvement quarterly)
 - Client project delivery on-time (95%+)
 - Operational cost management (within budget)
 - Team productivity metrics
+- Internal documentation coverage (runbooks, playbooks, SOPs)
 
 ---
 
@@ -319,8 +294,8 @@ Individual → Direct Pair → Full Team → External (Advisor/Board)
 
 ### Mentorship Assignment
 - New technical hire → Kyrian (primary), Ivan (secondary)
-- New operations hire → Jonathan (primary), Ivan (secondary)
-- New business hire → Ivan (primary), Jonathan (secondary)
+- New operations hire → Ivan (primary), Kyrian (secondary)
+- New business hire → Ivan (primary), Kyrian (secondary)
 
 ---
 
@@ -356,5 +331,5 @@ Individual → Direct Pair → Full Team → External (Advisor/Board)
 
 ---
 
-**Last Updated:** March 2026
-**Next Review:** June 2026
+**Last Updated:** June 2026
+**Next Review:** September 2026

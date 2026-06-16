@@ -59,7 +59,7 @@
 | **Ivan Weiss van der Pol** | Founder & CEO · Data Engineer, Automation Architect, QA Specialist | Python, n8n, Next.js, Docker Swarm, full-stack |
 | **Kyrian Weiss van der Pol** | Co-Founder & Technical Director · n8n expert, AI integration | n8n, AI integration, automation, technical architecture |
 
-> ⚠️ **Jonathan Verdun is no longer with the company** (archived folder at `Company/Staff/03-Jonathan-Verdun/` is historical only)
+> **Team of 2 founders + 8 named AI bots.** Operations is shared between Ivan and Kyrian until a dedicated ops hire lands in Phase 2 (see `Company/Staff/analysis/Team-Structure.md`).
 
 **The 8 named AI bots** form the extended team:
 - `explorer-bot` — market research

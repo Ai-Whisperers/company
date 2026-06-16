@@ -73,7 +73,7 @@ What to put on the homepage, in sales decks, in proposals:
 | **Ivan Weiss van der Pol** | Founder & CEO | Data Engineer, Automation Architect, QA Specialist. Founded AI Whisperers Nov 2025 | weissvanderpol.ivan@gmail.com · +595 981 324 569 |
 | **Kyrian Weiss van der Pol** | Co-Founder & Technical Director | n8n expert, AI integration specialist, technical architecture lead | kyrianweiss.vdp@gmail.com |
 
-> **Note:** Jonathan Verdun is no longer with the company. The team is now 2 founders. (See `Company/Staff/03-Jonathan-Verdun/` — archived, kept for history.)
+> **Team of 2 founders.** Operations is shared between Ivan and Kyrian until a dedicated ops hire. See `Company/Staff/analysis/Team-Structure.md` for the scaling plan.
 
 ---
 

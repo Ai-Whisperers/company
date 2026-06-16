@@ -73,20 +73,17 @@
 | Requirements Gathering | Client discovery | Expert | Ivan |
 | Proposal Writing | Technical sales | Expert | Ivan |
 | Presentations | Client demos | Expert | Ivan |
-| Stakeholder Management | Client relations | Advanced | Jonathan |
-| Account Management | Client success | Advanced | Jonathan |
 | Negotiation | Deal-making | Advanced | Ivan |
 
 ### Operations
 
 | Skill | Description | Expertise Level | Primary User |
 |-------|-------------|-----------------|--------------|
-| Process Optimization | Efficiency | Expert | Jonathan |
-| Project Management | Delivery | Advanced | Jonathan |
-| Resource Planning | Allocation | Advanced | Jonathan |
 | Documentation | Knowledge mgmt | Expert | All |
 | Quality Assurance | Standards | Expert | Ivan |
 | Workflow Design | Automation | Advanced | All |
+| Project Management | Delivery | Advanced | Ivan, Kyrian |
+| Process Optimization | Efficiency | Advanced | Ivan, Kyrian |
 
 ### Leadership
 
@@ -127,32 +124,32 @@
 
 ### Communication
 
-| Skill | Ivan | Kyrian | Jonathan |
-|-------|------|--------|----------|
-| Written Communication | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
-| Verbal Communication | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
-| Active Listening | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
-| Technical Writing | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
-| Presentation | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
+| Skill | Ivan | Kyrian |
+|-------|------|--------|
+| Written Communication | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
+| Verbal Communication | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
+| Active Listening | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
+| Technical Writing | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
+| Presentation | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
 
 ### Collaboration
 
-| Skill | Ivan | Kyrian | Jonathan |
-|-------|------|--------|----------|
-| Teamwork | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
-| Conflict Resolution | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
-| Adaptability | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
-| Empathy | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
-| Patience | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
+| Skill | Ivan | Kyrian |
+|-------|------|--------|
+| Teamwork | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
+| Conflict Resolution | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
+| Adaptability | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
+| Empathy | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
+| Patience | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
 
 ### Problem-Solving
 
-| Skill | Ivan | Kyrian | Jonathan |
-|-------|------|--------|----------|
-| Critical Thinking | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
-| Creativity | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
-| Analytical Skills | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
-| Decision Making | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
+| Skill | Ivan | Kyrian |
+|-------|------|--------|
+| Critical Thinking | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
+| Creativity | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
+| Analytical Skills | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
+| Decision Making | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
 
 ---
 
@@ -176,13 +173,6 @@
 | LangChain/LangGraph | Self-taught | 2025 | In Progress |
 | Python Programming | Self-taught | 2025 | In Progress |
 
-### Jonathan Verdun
-
-| Certification | Issuer | Year | Status |
-|---------------|--------|------|--------|
-| Business Operations | On-the-job | 2025 | In Progress |
-| Client Management | On-the-job | 2025 | In Progress |
-
 ---
 
 ## Learning & Development
@@ -200,12 +190,7 @@
 - Frontend development (React/TypeScript)
 - Database design and optimization
 - Technical leadership skills
-
-#### Jonathan
-- Project management certification (PMP/Scrum)
-- Business process optimization frameworks
-- Client success methodologies
-- Automation tools (n8n basics)
+- Project management and process optimization
 
 ### Recommended Training
 
@@ -218,58 +203,3 @@
 
 #### Technical Team
 - Kubernetes deep-dive
-- Advanced cloud architecture
-- Microservices patterns
-- Performance optimization
-
-#### Business Team
-- Sales fundamentals
-- Contract negotiation
-- Financial modeling
-- Marketing basics
-
----
-
-## Skills Gap Analysis
-
-### Critical Gaps
-
-| Gap | Impact | Priority | Mitigation |
-|-----|--------|----------|------------|
-| Frontend Development | Cannot build full-stack alone | High | Hire React dev |
-| Mobile Development | No mobile capabilities | Medium | Outsource initially |
-| Security Expertise | Risk for enterprise clients | High | Training + consultant |
-| Sales/Marketing | Growth limitation | High | Hire BD person |
-| DevOps at Scale | Deployment bottlenecks | Medium | Hire DevOps engineer |
-
-### Nice-to-Have Skills
-
-| Skill | Value | Timeline |
-|-------|-------|----------|
-| UI/UX Design | Better products | 6-12 months |
-| Data Science | Advanced analytics | 12+ months |
-| Video Editing | Marketing content | As needed |
-| Copywriting | Better proposals | As needed |
-
----
-
-## Knowledge Management
-
-### Documentation Standards
-- All technical decisions documented
-- Client interactions logged
-- Code commented and documented
-- Processes written down
-- Lessons learned captured
-
-### Knowledge Sharing
-- Weekly tech talks
-- Code review sessions
-- Documentation reviews
-- Cross-training sessions
-- External learning sharing
-
----
-
-**Last Updated:** March 2026
-**Next Review:** June 2026

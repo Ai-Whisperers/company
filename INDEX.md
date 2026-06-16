@@ -40,7 +40,6 @@ company/
 │   ├── Staff/                             # People
 │   │   ├── 01-Ivan-Weiss-van-der-Pol/     # Founder & CEO
 │   │   ├── 02-Kyrian-Weiss-van-der-Pol/   # Co-Founder & Technical Director
-│   │   ├── 03-Jonathan-Verdun/            # [ARCHIVED] Former co-founder
 │   │   ├── analysis/
 │   │   │   ├── Competency-Matrix.md
 │   │   │   ├── Skills-Inventory.md
@@ -99,7 +98,7 @@ company/
   - 📧 kyrianweiss.vdp@gmail.com
   - [CV](Company/Staff/02-Kyrian-Weiss-van-der-Pol/CV.md) | [Resume](Company/Staff/02-Kyrian-Weiss-van-der-Pol/Resume-1Page.md) | [Profile](Company/Staff/02-Kyrian-Weiss-van-der-Pol/Profile.md)
 
-> ⚠️ **Note:** Jonathan Verdun (`Company/Staff/03-Jonathan-Verdun/`) is no longer with the company. The folder is kept for historical reference.
+**Team of 2 founders.** Operations is shared between Ivan and Kyrian until a dedicated ops hire. See `Company/Staff/analysis/Team-Structure.md` for the scaling plan.
 
 ---
 

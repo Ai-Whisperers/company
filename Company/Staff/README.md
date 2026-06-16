@@ -18,11 +18,6 @@ Staff/
 │   ├── Resume-1Page.md
 │   ├── Analysis.md
 │   └── Profile.md
-├── 03-Jonathan-Verdun/              # Operations
-│   ├── CV.md
-│   ├── Resume-1Page.md
-│   ├── Analysis.md
-│   └── Profile.md
 ├── templates/                        # Document templates
 │   ├── CV-Template.md
 │   ├── Resume-Template.md
@@ -40,7 +35,6 @@ Staff/
 |---|------|------|--------|--------|
 | 1 | **Ivan Weiss van der Pol** | Founder & CEO | Active | Nov 2025 |
 | 2 | **Kyrian Weiss van der Pol** | Technical Management | Active | Nov 2025 |
-| 3 | **Jonathan Verdun** | Operations | Active | Nov 2025 |
 
 ## Quick Links
 
@@ -53,11 +47,6 @@ Staff/
 - [Full CV](./02-Kyrian-Weiss-van-der-Pol/CV.md)
 - [One-Page Resume](./02-Kyrian-Weiss-van-der-Pol/Resume-1Page.md)
 - [Profile](./02-Kyrian-Weiss-van-der-Pol/Profile.md)
-
-### Jonathan Verdun
-- [Full CV](./03-Jonathan-Verdun/CV.md)
-- [One-Page Resume](./03-Jonathan-Verdun/Resume-1Page.md)
-- [Profile](./03-Jonathan-Verdun/Profile.md)
 
 ## Team Competencies
 
@@ -81,7 +70,7 @@ Staff/
 **Email:** kyrianweiss.vdp@gmail.com
 
 ## Last Updated
-March 2026
+June 2026
 
 ## Maintainer
 AI Whisperers HR Documentation
