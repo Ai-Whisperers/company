@@ -24,6 +24,12 @@
 | Cite a research source | [`docs/research-sources.md`](docs/research-sources.md) |
 | See a staff CV | [`Company/Staff/`](Company/Staff/) |
 | Run CI/CD locally | [`docs/CI_CD_LOCAL.md`](docs/CI_CD_LOCAL.md) |
+| Legal, EAS formation, contracts | [legal](https://github.com/Ai-Whisperers/legal) |
+| Seven Flag / jurisdiction strategy | [legal/company-info/strategy](https://github.com/Ai-Whisperers/legal/tree/main/company-info/strategy) |
+| Marketing playbook (funnel, ICPs, calendar) | [marketing-strategy](https://github.com/Ai-Whisperers/marketing-strategy) |
+| Sales & client delivery | [Management](https://github.com/Ai-Whisperers/Management) |
+| Cursor rules, prompts, dev standards | [cursor-standards](https://github.com/Ai-Whisperers/cursor-standards) |
+| Archived Org OS (historical only) | [Company-Information](https://github.com/Ai-Whisperers/Company-Information) |
 
 ---
 
